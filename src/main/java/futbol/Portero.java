@@ -1,6 +1,6 @@
 package futbol;
 
-public class Portero extends Futbolista implements Comparable<Futbolista>{
+public class Portero extends Futbolista {
 
     public short golesRecibidos;
     public byte dorsal;
@@ -23,5 +23,10 @@ public class Portero extends Futbolista implements Comparable<Futbolista>{
     @Override
     public String toString() {
         return super.toString() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
